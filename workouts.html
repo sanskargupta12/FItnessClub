@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts</title>
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+    }
+
+    body {
+        background-image: url("https://img.freepik.com/premium-photo/ocean-breeze-abstract-background_608068-3870.jpg?w=1060");
+        background-repeat: repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        background: #292f36;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0 2% auto 0;
+        padding-left: 0;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #a9abae;
+    }
+
+    nav ul li:hover {
+        color: cadetblue;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        padding: 50px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        flex-wrap: wrap; /*Added*/
+    }
+
+    .workout-container {
+        display: flex;
+        width: 80%;
+        background-color: #0c3547;
+        border-radius: 15px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4), 0px 2px 15px rgba(0, 0, 0, 0.5);
+        margin-bottom: 80px;
+        /* flex-wrap: wrap; */
+
+    }
+
+    .workout-image1 {
+        flex: 1;
+        background-image: url("https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/10/home-chest-workout-scaled.jpg?fit=2560%2C1707&ssl=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .workout-image2 {
+        flex: 1;
+        background-image: url("https://www.bodybuilding.com/fun/images/2015/leg-workouts-for-men-the-7-best-workouts-for-thicker-quads-glutes-and-hams-mobile-facebook-960x540.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .workout-image3{
+        flex: 1;
+        background-image: url("https://www.popularfitness.com/photos/pull-up-exercise-pullups.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .workout-image4{
+        flex: 1;
+        background-image: url("https://www.verywellfit.com/thmb/Y-pUPTgW0nQOwfBz7ahVRaTMHBg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/everything-you-need-to-know-about-cardio-1229553-8e08847ffcfb4845b29c08fa27e76d32.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .workout-image5{
+        flex: 1;
+        background-image: url("https://phantom-marca.unidadeditorial.es/ab0d0c72d63e29f8248482f01120a9fb/resize/1200/f/webp/assets/multimedia/imagenes/2021/12/18/16398597754199.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .workout-image6{
+        flex: 1;
+        background-image: url("https://images.contentstack.io/v3/assets/blt45c082eaf9747747/blta2cf34be231e50d5/5faa9e613cdbef7187ce5a83/FL_1_Blog-Header-Pics_1232-x-630_V3-crunches.jpg?format=pjpg&auto=webp&quality=76&width=1232");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+
+        border-bottom-left-radius: 15px;
+    }
+
+
+    .workout-content {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .workout-content h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .workout-content p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1;
+        color: rgb(252, 250, 250);
+        /* flex-wrap: wrap; */
+    }
+
+    .workout-content .read-more {
+        display: inline-block;
+        text-decoration: none;
+        float: right;
+        font-size: 20px;
+        color: rgb(30, 104, 90);
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .workout-container {
+            width: 90%;
+        }
+
+        .workout-image,
+        .workout-content {
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        .workout-image {
+            flex: 0 0 50%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="fitness.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <h1>Workouts</h1>
+    <main>
+        <div class="workout-container">
+            <div class="workout-image1"></div>
+            <div class="workout-content">
+                <h2>Pushups</h2>
+                <p>Pushups are a great exercise for strengthening the upper body, particularly the chest, shoulders, and triceps.
+                To perform a proper push-up, start in a high plank position with your hands shoulder-width apart and your body in a straight line from head to heels. Lower your body by bending your elbows, keeping them close to your sides, until your chest nearly touches the ground or you reach a comfortable range of motion. Push back up to the starting position by fully extending your arms while maintaining a straight body alignment. It is essential to focus on engaging the target muscles and maintaining proper form throughout the movement.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        
+        <div class="workout-container">
+            <div class="workout-content">
+                <h2>Leg Exercise</h2>
+                <p>
+                    
+                    Leg exercises are an essential part of any workout routine as they help to build strength, stability, and overall lower body development. One popular leg exercise is the squat. Squats target the muscles in your thighs, hips, and buttocks. To perform a squat, start by standing with your feet shoulder-width apart. Lower your body down as if you were sitting back into a chair, keeping your weight on your heels and your knees aligned with your toes. Go as low as you comfortably can, then push through your heels to return to a standing position. Another effective leg exercise is the lunge. Lunges primarily work your quadriceps, hamstrings, and glutes. To do a lunge, take a step forward with one leg and lower your body until both knees are bent at a 90-degree angle. Push through your front heel to return to the starting position. Additionally, exercises like leg presses, calf raises, and step-ups can also help to strengthen and tone your leg muscles. Incorporating a variety of leg exercises into your fitness routine will ensure a well-rounded lower body workout.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="workout-image2"></div>
+        </div>
+    
+        <div class="workout-container">
+            <div class="workout-image3"></div>
+            <div class="workout-content">
+                <h2>Pull-Ups</h2>
+                <p>  
+                    Pull-ups are a challenging yet highly effective exercise for developing upper body strength, particularly targeting the muscles in your back, shoulders, and arms. To perform a pull-up, start by gripping an overhead bar with your palms facing away from you and your hands slightly wider than shoulder-width apart. Hang from the bar with your arms fully extended and your body straight. Engage your back muscles and pull your body upward until your chin is above the bar. Lower yourself back down with control until your arms are fully extended again. It's important to maintain proper form throughout the movement, keeping your core engaged and avoiding excessive swinging or kipping. If you're new to pull-ups, you can start with assisted variations using bands or a pull-up machine to gradually build strength. As you progress, aim to increase the number of reps or challenge yourself with advanced variations such as wide-grip pull-ups or weighted pull-ups. Consistently incorporating pull-ups into your workout routine can lead to improved upper body strength and muscular development.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="workout-container">
+            <div class="workout-content">
+                <h2>Cardio</h2>
+                <p>
+                    
+                    Cardiovascular exercises, commonly known as cardio, are activities that increase your heart rate and breathing rate, promoting cardiovascular health and overall fitness. These exercises are great for improving endurance, burning calories, and enhancing the efficiency of your heart and lungs. Some popular forms of cardio include running, jogging, cycling, swimming, and jumping rope.
+
+                    Engaging in regular cardio workouts can offer numerous benefits. It helps strengthen your heart muscle, which leads to better blood circulation and increased oxygen delivery to your body's tissues. This, in turn, improves your energy levels and stamina for everyday activities. Cardio workouts also contribute to weight management by burning calories and reducing excess body fat.                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="workout-image4"></div>
+        </div>
+
+
+        <div class="workout-container">
+            <div class="workout-image5"></div>
+            <div class="workout-content">
+                <h2>Squats</h2>
+                <p>  
+                    Squats are a popular and effective exercise for targeting the muscles in your lower body, including the quadriceps, hamstrings, and glutes. They are compound exercises that engage multiple muscle groups simultaneously, making them an excellent choice for building strength and improving overall lower body function.
+
+                    To perform a squat, start by standing with your feet shoulder-width apart, toes slightly turned out. Keep your chest up, and engage your core for stability. Begin the movement by bending your knees and pushing your hips back as if you were sitting down into a chair. Lower your body until your thighs are parallel to the ground, or as low as your mobility allows. Make sure to keep your knees aligned with your toes and avoid letting them collapse inward. Pause for a moment at the bottom of the squat, then push through your heels to return to the starting position.b 
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="workout-container">
+            <div class="workout-content">
+                <h2>Crunches</h2>
+                <p>  
+                    Crunches are a popular exercise for targeting and strengthening the abdominal muscles. They are performed by lying on your back with your knees bent and feet flat on the ground. Placing your hands behind your head or lightly touching your temples, you engage your core muscles by drawing your belly button in towards your spine.
+
+                    To execute a crunch, you slowly lift your upper body off the ground while curling your shoulders towards your knees. It's important to keep your lower back pressed into the floor throughout the movement to avoid straining your back. Exhaling as you perform the crunch helps engage the abdominal muscles.
+                    
+                    Hold the contracted position for a second to fully engage the abs before slowly lowering your upper body back down to the starting position. It's crucial to maintain control and focus on the abdominal muscles throughout the exercise.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="workout-image6"></div>
+
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <style>
+       
+        .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+    }
+    
+    nav {
+        width: 100%;
+        height: 60px;
+        background: #292f36;
+        z-index: 10;
+        
+    }
+    
+    nav div {
+        color: white;
+        font-size: 2rem;
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        left: 2%;
+        visibility: hidden;
+    }
+    .visible-title {
+        visibility: visible;
+    }
+    
+    nav ul { 
+        list-style-type: none;
+        margin: 0 2% auto 0;
+        padding-left: 0;
+        text-align: right;
+        max-width: 100%;
+    }
+    nav ul li { 
+        display: inline-block; 
+        line-height: 60px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    nav ul li a {
+        text-decoration: none; 
+        color: #a9abae;
+    }
+    nav ul li:hover {
+        color: cadetblue;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+body {
+  background-image: url("https://www.betterliveshealthyfuturesbw.nhs.uk/wp-content/uploads/2020/06/5_11_healthy_foods_pixabay.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  display: grid;
+  place-items: Center;
+  color: #fff;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  width: 100%;
+  padding: 2em 0px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+.container h1 {
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+.container .list {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container .list img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.container .list i {
+  position: absolute;
+  right: 0;
+  padding: 0 5rem;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding: 0px 20px;
+  background: #f90c;
+  background-size: 100px 100px;
+  font-size: 1.3em;
+  opacity: 0.5;
+  transition: 0.2s;
+  overflow: hidden;
+}
+.container .list:hover > i {
+  opacity: 1;
+}
+.container .list .wrapper {
+  padding-left: 10px;
+}
+.container .list .wrapper h3 {
+  text-align:left;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.container .list .wrapper p {
+  padding: 5px;
+  margin-left: 9px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  color: #c6c6c6;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="fitness.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="login.html">Login</a></li>
+        <ul>
+    </nav>
+    <div class="container">
+        <h1>HEALTHY MEAL</h1>
+        <div class="list">
+          <img src="https://images.unsplash.com/photo-1601039641847-7857b994d704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXZvY2Fkb3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+          <div class="wrapper">
+            <h3>Avocado </h3>
+            <p>Healthy fats</p>
+            <p>234 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+          <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/fruit-berries-yogurt-1296x728-header.jpg?w=1155&h=1528" alt="">
+          <div class="wrapper">
+            <h3>Greek Yogurt</h3>
+            <p> Carbohydrates, proteins</p>
+            <p>133 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+          <img src="https://images.unsplash.com/photo-1614410082354-7178f3bc2091?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWxtb25kc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+          <div class="wrapper">
+            <h3>Almonds</h3>
+            <p> Healthy fats, proteins</p>
+            <p>164 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+        <div class="list">
+          <img src="https://www.simplyrecipes.com/thmb/FG-KGbJXpwV0XXOSajt25E_CDos=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__07__Make-Fluffy-Quinoa-LEAD-6-f21288dc6fff44398955f1d41b65e11c.jpg" alt="">
+          <div class="wrapper">
+            <h3>Quinoa</h3>
+            <p> Carbohydrates, proteins</p>
+            <p>222 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+
+        <div class="list">
+          <img src="https://img.taste.com.au/z_S6BhQY/taste/2018/03/apr-18_salmon-with-parsley-salad-3000x2000-136320-1.jpg" alt="">
+          <div class="wrapper">
+            <h3>Salmon</h3>
+            <p> Proteins, healthy fats</p>
+            <p>155 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      
+        <div class="list">
+          <img src="https://media.istockphoto.com/id/137302332/photo/wooden-bowl-overflowing-with-chickpeas-topped-with-parsley.jpg?s=612x612&w=0&k=20&c=94ubV73yeBgO9GuiKnBGqyCbztnTgaGJ5774cp-ZzQQ=" alt="">
+          <div class="wrapper">
+            <h3>Chickpeas</h3>
+            <p> Proteins, Carbohydrates</p>
+            <p>269 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+  
+        <div class="list">
+          <img src="https://st2.depositphotos.com/1692343/5318/i/600/depositphotos_53188533-stock-photo-organic-raw-sweet-potatoes.jpg" alt="">
+          <div class="wrapper">
+            <h3>Sweet Potatoes</h3>
+            <p>Carbohydrates</p>
+            <p>130 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+
+        <div class="list">
+          <img src="https://images.indianexpress.com/2019/07/egg_thinkstockphotos759-1.jpg" alt="">
+          <div class="wrapper">
+            <h3>Eggs</h3>
+            <p>Protiens , healthy fats</p>
+            <p>78 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+    
+        <div class="list">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IUDvoyut-AZD9ItXygHR5Bqcb5rnFci4EVXf4W0f80xm_qWUi0Ipt1o4q8N2nvLojcc&usqp=CAU" alt="">
+          <div class="wrapper">
+            <h3>Spinach</h3>
+            <p>Protiens , Carbohydrates</p>
+            <p>7 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+
+        <div class="list">
+          <img src="https://media.istockphoto.com/id/928823336/photo/grilled-chicken-breast-fried-chicken-fillet-and-fresh-vegetable-salad-of-tomatoes-cucumbers.jpg?s=612x612&w=0&k=20&c=x6KbcglhT_oxKEzCoSM5E8abP3rlEZAt7jQhlAPZtoY=" alt="">
+          <div class="wrapper">
+            <h3>Chicken Breast</h3>
+            <p>Protiens</p>
+            <p>186 Cal</p>
+          </div>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+
+  </div>
+</body>
+</html>

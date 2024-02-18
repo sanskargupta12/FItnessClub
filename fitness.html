@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitness Website</title>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+    color: rgb(243, 243, 243);
+	font-family:poppins;
+    background-image: url("https://i.ibb.co/6nSrtXz/top-view-perfectly-ordered-fitness-items.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	/* background-color:gray; */
+}
+
+header {
+	color: #f0f0f0;
+	padding: 10px 20px;
+	text-align: center;
+}
+nav{
+        /* flex:1.7; */
+		/* background: #6b7173; */
+        background-color: transparent;	
+		 
+		}
+
+    nav ul{
+        display: inline-block;
+        list-style: none;
+    }
+    nav ul li{ 
+        display:inline-block;
+        margin-right: 70px;
+		/* position: fixed; */
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size:30px;
+        color: rgb(255, 255, 255);
+        font-family: poppins; 
+	    
+    }
+    nav ul li button{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+  
+    nav ul li a:hover{
+        color: rgb(39, 58, 92);
+		font-family:Georgia, 'Times New Roman', Times, serif;
+		border-radius: 30px;
+		font-size: 45px;
+		text-decoration:underline
+    }
+    a{
+        text-decoration: none;
+        color:rgb(41, 41, 41);
+        font-size: 28px;
+    }
+
+image{
+    height:100px;
+    width:100px;
+}
+main {
+	padding: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+
+.banner {
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #1d1d1d;
+	padding: 100px 20px;
+}
+
+.banner h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.banner p {
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.banner a {
+	background-color: #26515e;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.banner a:hover {
+	background-color: #0f708e;
+}
+
+.features {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.feature {
+	flex-basis: 30%;
+	margin-bottom: 40px;
+	border: 1px solid rgb(156, 154, 154);
+	border-radius: 23px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+    
+}
+.feature:hover{
+	box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 5px 0px,
+    rgba(232, 232, 232, 0.5) 0px 5px 15px 0px;
+}    
+
+
+.feature img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.feature h2 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.feature p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.feature a {
+	background-color: #1d4c59;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+.feature a:hover {
+	background-color: #266795;
+	
+}
+#a,#b,#c{
+  height: 100px;
+  width: 100px;
+}
+#welcome_h1{
+	color: #e5e4e4;
+	font-size: 45px;
+}
+
+p{
+	font-size: 25px;
+}
+#img_header{
+  border-radius: 20px;
+  height: 280px;
+  
+   
+}
+#img_header:hover{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+    
+}
+ #logo{
+	height: 180px;
+	width: 180px;
+	border: 1px solid transparent;
+	/* margin: 20px;
+	padding: 30px;
+     */
+ }
+ 
+ #para{
+	color: rgb(255, 255, 255);
+ }
+
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<!-- <img src="https://o.remove.bg/downloads/343ef656-ee9e-424c-adae-2750050b00aa/download2-removebg-preview.png" alt="logo" id="logo"> -->
+				<li><a href="fitness.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="nutrition.html">Nutrition</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+			
+		</nav>
+		<img src="https://i.ibb.co/SxZPZM0/download2.png" alt="logo" id="logo">
+	
+    
+	
+		<h1 id="welcome_h1">Welcome to Fitness Club</h1>
+		<p id="para">Here you can find a variety of resources to help you achieve your fitness goals.</p>
+		<img src="https://i.ibb.co/gPSnyWG/random-pics-removebg-preview.png" id="img_header">
+        <div> 
+		</header>
+     <main>   <section class="banner">
+			<h1 id="welcome_h1">Get fit and stay healthy</h1>
+			<p id="para">Discover the best workouts and nutrition plans for your body</p>
+			<a href="workouts.html">View Workouts</a>
+		</section>
+		<section class="features">
+			<div class="feature">
+				<img id="a" src="https://img.icons8.com/?size=512&id=O3MT7eStlDUr&format=png">
+				<h2>Workouts</h2>
+				<p>Find the perfect workout plan for your fitness goals</p>
+				<a href="workouts.html">View Workouts</a>
+			</div>
+			<div class="feature">
+				<img id="b" src="https://img.icons8.com/?size=512&id=fJx2GnLnZ9rH&format=png">
+				<h2>Nutrition</h2>
+				<p>Discover the best nutrition plans for your body</p>
+				<a href="nutrition.html">View Nutrition</a>
+			</div>
+			<div class="feature">
+				<img id="c" src="https://img.icons8.com/?size=512&id=FoIxgAEoH16H&format=png">
+				<h2>Lifestyle</h2>
+				<p>Get tips on how to live a healthy and balanced lifestyle</p>
+				<a href="blog.html">Read Blog</a>
+			</div>
+		</section></div>
+	</main>
+</body>
+</html>

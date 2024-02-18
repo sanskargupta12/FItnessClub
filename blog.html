@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: poppins;
+                box-sizing: border-box;
+            }
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+           a{
+            text-decoration: none;
+           }
+           ul{
+            list-style: none;
+           }
+           body{
+            margin: 0px;
+            padding: 0px;
+            font-family: poppins;
+           }
+           /* blog section */
+           #blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+           }
+           .blog-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+           }
+           .blog-heading span{
+            color: #f33c3c;
+    
+           }
+           .blog-heading h3{
+            font: size 2.4rem; 
+            color: #2b2b2b;
+            font-size: 60px;
+           }
+           .blog-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:20px 0px;
+            flex-wrap: wrap;
+    
+           }
+           .blog-box{
+            width: 350px;
+            background-color: #ffffff;
+            border:1px solid #ececec;
+            margin: 20px;
+    
+           }
+           .blog-img{
+            width: 100%;
+            height: auto;
+    
+           }
+           .blog-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px,
+        rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
+           }
+           .blog-text{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+    
+           }
+           .blog-text span{
+            color:#f33c3c;
+            font-size: 0.9rem;
+               
+        }
+        .blog-text .blog-title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+        }
+        .blog-text .blog-title :hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+            
+        }
+        .blog-text p{
+            color: #9b9b9b;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow:scroll;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+    
+        }
+        .blog-text a{
+            color: #0f0f0f;
+    
+        }
+        .blog-text a :hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        @media(max-width:1250px){
+            .blog-box{
+                width: 300px;
+            }
+        }
+        @media(max-width:1100px){
+            .blog-box{
+                width: 70%;
+            }
+        }
+        @media(max-width:550px){
+            .blog-box{
+                margin: 20px 10px;
+                width:100%
+    
+            }
+            #blog{
+                padding:20px;
+            }
+        }
+    
+    
+    
+        /* navigationnnn---------------------- */
+        .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+    }
+    
+    nav {
+        width: 100%;
+        height: 60px;
+        background: #292f36;
+        z-index: 10;
+        position: fixed;
+    }
+    
+    nav div {
+        color: white;
+        font-size: 2rem;
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        left: 2%;
+        visibility: hidden;
+    }
+    .visible-title {
+        visibility: visible;
+    }
+    
+    nav ul { 
+        list-style-type: none;
+        margin: 0 2% auto 0;
+        padding-left: 0;
+        text-align: right;
+        max-width: 100%;
+    }
+    nav ul li { 
+        display: inline-block; 
+        line-height: 60px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    nav ul li a {
+        text-decoration: none; 
+        color: #a9abae;
+    }
+    nav ul li:hover {
+        color: cadetblue;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="fitness.html">Home</a></li>
+				<li><a href="workouts.html">Workouts</a></li>
+				<li><a href="nutrition.html">Nutrition</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="login.html">Login</a></li>
+            <ul>
+        </nav>
+         <section id="blog">
+            <div class="blog-heading">
+                <span>My Recent Posts</span>
+                <h3>My Blog</h3>
+            </div>
+            <!-- blog-container----->
+            <div class="blog-container">'
+                <!-- box-1 ------>
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="https://img.freepik.com/premium-photo/silhouette-young-man-running-sprinting-road-fit-runner-fitness-runner-during-outdoor-workout_38335-619.jpg?w=2000" alt="blog">
+                    </div>
+                    
+                    <!--text-->
+                    <div class="blog-text">
+                       <span>18 July 2021 </span> 
+                    <a href="#" class="blog-title">
+                        "The Importance of Strength Training for Overall Fitness"
+                    </a>
+                       <p>When it comes to achieving optimal fitness, it's crucial to focus not only on cardiovascular exercises but also on strength training. Many people underestimate the benefits of strength training and stick solely to cardio workouts. In this blog, we will highlight the importance of incorporating strength training into your fitness routine and discuss the numerous advantages it offers.
+                        Incorporating strength training into your fitness routine is essential for achieving overall fitness and reaping the benefits it offers. By building lean muscle, enhancing functional strength, increasing bone density, boosting metabolism, and preventing injuries, strength training becomes an integral part of a well-rounded fitness regimen. So, don't underestimate the power of lifting weights and give your body the strength it deserves.
+                       </p>
+                    <a href="#">Read More</a>
+                    </div>
+                </div>
+    
+                 <!-- box-2-------------------------->
+                 <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="https://img.freepik.com/free-photo/top-view-dumbbells-with-salad_23-2148531511.jpg" alt="blog">
+                    </div>
+                    
+                    <!--text-->
+                    <div class="blog-text">
+                       <span>05 August 2022</span> 
+                    <a href="#" class="blog-title">
+                        "Nutrition Tips for Maximizing Workout Performance"
+                    </a>
+                       <p>
+                        Your nutrition plays a vital role in maximizing your workout performance and achieving your fitness goals. Whether you're aiming to build muscle, lose weight, or simply improve your overall fitness, fueling your body with the right nutrients is essential. In this blog, we will provide valuable nutrition tips to help you optimize your workout performance.
+                        Nutrition plays a pivotal role in optimizing workout performance. Prioritizing pre-workout fuel, staying hydrated, refueling post-workout, considering all macronutrients, and listening to your body are key components of a well-rounded nutrition plan. By providing your body with the right nutrients, you can maximize your workout potential, enhance recovery, and achieve your fitness goals more effectively.
+                    </p>
+                    <a href="#">Read More</a>
+                    </div>
+                </div>
+                     <!-- box-3------------------------>
+                     <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="https://anticancerlifestyle.org/wp-content/uploads/2022/04/gut-health.png" alt="blog">
+    
+                        </div>
+                        
+                        <!--text-->
+                        <div class="blog-text">
+                           <span>13 January 2023 </span> 
+                        <a href="#" class="blog-title">
+                            "Achieving a Balanced Lifestyle for Long-Term Fitness Success"
+                        </a>
+                           <p>
+                            When it comes to fitness, it's essential to adopt a balanced lifestyle that encompasses not only exercise and nutrition but also other aspects of well-being. Many people struggle to maintain a long-term commitment to fitness due to the lack of balance in their lives. In this blog, we will explore the importance of achieving a balanced lifestyle and provide tips to help you stay on track for long-term fitness success.      
+                            Achieving a balanced lifestyle is vital for long-term fitness success. By prioritizing sleep, managing stress, practicing mindful eating, incorporating rest and recovery, and enjoying activities beyond fitness, you'll create a sustainable approach to your well-being. Remember, fitness is just one aspect of a fulfilling life, and by finding balance, you'll enhance not only your physical health but also your overall happiness and satisfaction.
+                        </p>
+                        <a href="#">Read More</a>
+                        </div>
+                    </div>
+    
+    
+            </div>
+    
+         </section>
+    </body>
+    </html>
+</head>
+<body>
+    
+</body>
+</html>

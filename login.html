@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+<style>
+  *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+  }
+body{
+  background-image: url("https://img.freepik.com/premium-photo/container-with-bodycare-skincare-cream-blue-background-with-blooming-cherry-cosmetic-facial-skin-care-spa-natural-treatment-concept_680447-48.jpg?w=900");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+        width: 100%;
+        height: 60px;
+        background: #292f36;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0 2% auto 0;
+        padding-left: 0;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #a9abae;
+    }
+
+    nav ul li:hover {
+        color: cadetblue;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+
+form {
+  max-width: 700px;
+  margin: 80px auto;
+  max-height:800px;
+  padding: 80px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(198, 197, 197);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #555;
+  font-size: 26px;
+}
+
+input[type="submit"] {
+  background-color: #22657d;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #6ac3dc;
+}
+
+</style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+          <li><a href="fitness.html">Home</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="login.html">Login</a></li>
+      </ul>
+  </nav>
+    <form>
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <a href="workouts.html"><input type="submit" value="Login" onclick="login()"></a>
+    </form>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+<script>
+    function login() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Validate the username and password
+  if (username == "" || password == "") {
+    alert("Please enter both username and password");
+    return false;
+  } else {
+    alert("Login successful!");
+    return true;
+  }
+}
+
+</script>
